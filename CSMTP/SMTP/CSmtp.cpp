@@ -17,8 +17,10 @@
 #include <cassert>
 
 // OpenSSL 1.0.2h - /MT
+#ifndef CSMTP_DONT_LINK_OPENSSL_IN_SOURCE
 #pragma comment(lib, "ssleay32.lib")
 #pragma comment(lib, "libeay32.lib")
+#endif
 
 Command_Entry command_list[] = 
 {
